@@ -1,5 +1,7 @@
-const express = require("express");
+const express = require("express")
 const router = express();
+
+router.use("/api/users", require("./UserRoutes.js"));
 
 // test route
 router.get('/', (req, res) => {
